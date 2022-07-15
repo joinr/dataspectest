@@ -32,8 +32,6 @@
 (s/valid? ::input-correlations-concise tst) ;;true
 (s/valid? ::input-correlations-concise (assoc tst :input "blah")) ;;false
 
-
-; Unfortunately, this throws an exception and I'm not sure why
 (gen/generate (s/gen ::input-correlations-concise))
 ;; {:input :-/b!O+,
 ;;  :score 21970,
